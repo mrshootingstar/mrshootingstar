@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Smith</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body class="bg-slate-100">
+    <!-- Hero Section -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-8">
+        <!-- Main Content -->
+        <div class="text-center mb-16">
+            <img src="/api/placeholder/400/300" alt="Hero Image" class="rounded-lg mx-auto mb-8 shadow-lg">
+            <h1 class="text-5xl font-bold mb-4 text-slate-800">Jane Smith</h1>
+            <p class="text-2xl text-slate-600">Software Engineer</p>
+        </div>
+
+        <!-- Placeholder Sections -->
+        <div class="w-full max-w-2xl space-y-8">
+            <div class="h-24 bg-white rounded-lg shadow-sm"></div>
+            <div class="h-32 bg-white rounded-lg shadow-sm"></div>
+            <div class="h-48 bg-white rounded-lg shadow-sm"></div>
+        </div>
+    </div>
+
+    <script>
+        // Fade-in animation for elements
+        anime({
+            targets: ['img', 'h1', 'p', '.h-24', '.h-32', '.h-48'],
+            opacity: [0, 1],
+            translateY: [20, 0],
+            delay: anime.stagger(100),
+            easing: 'easeOutQuad',
+            duration: 800
+        });
+    </script>
+</body>
+</html>
